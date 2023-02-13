@@ -55,7 +55,7 @@ section,
 
 
 #img-one {
-    background-image: url(./img/black.jpg);
+    background-image: url(./img/expandingthecircle.jpg);
     background-size: cover;
 }
 
@@ -64,12 +64,12 @@ section,
 }
 
 .content-one {
-    background: url(./img/whodidit.jpg) no-repeat fixed center;
+    background: url(./img/whichlawisbroken.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-two {
-    background: url(./img/whatdotheydeserve.jpg) no-repeat fixed center;
+    background: url(./img/whodidit.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
