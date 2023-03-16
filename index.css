@@ -214,3 +214,14 @@ h2.subheadline{
     font-family:"IvarHeadline-Regular","Georgia",serif;
     font-size: 0.5em;
 }
+.author-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d7d7d7;
+}
+.author-info span {
+    margin-right: 10px;
+}
