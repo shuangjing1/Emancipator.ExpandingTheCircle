@@ -207,10 +207,10 @@ gold#FBC24C
 h1.headline {
     color:#BADEFC;
     font-family:"IvarHeadline-Bold" ,"Georgia",serif;
-    font-size: large;
+    font-size: 5em;
 }
 h2.subheadline{
     color:#F6B0A0;
     font-family:"IvarHeadline-Regular","Georgia",serif;
-    font-size: medium;
+    font-size: 2em;
 }
