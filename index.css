@@ -204,7 +204,13 @@ gold#FBC24C
 */
 
 /*    MY TYPE STYLES    */
-.headline {
+h1.headline {
     color:#BADEFC;
-    font-family:IvarHeadline-Regular ;
+    font-family:"IvarHeadline-Bold" ,"Georgia",serif;
+    font-size: large;
+}
+h2.subheadline{
+    color:#F6B0A0;
+    font-family:"IvarHeadline-Regular","Georgia",serif;
+    font-size: medium;
 }
