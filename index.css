@@ -100,9 +100,9 @@ section,
 .graph {
     max-width: 800px; /* 设置文章最大宽度 */
   margin: 0 auto; /* 文章水平居中 */
-  font-family: Arial, sans-serif; /* 字体样式 */
-  font-size: 12px;
-  line-height: 1.5; /* 行高 */
+  font-family: IvarText-Regular; /* 字体样式 */
+  font-size: 16px;
+  line-height: 5; /* 行高 */
   color: #333; /* 文字颜色 */
 }
 .Jonathan Scharrer{
