@@ -225,3 +225,38 @@ h2.subheadline{
 .author-info span {
     margin-right: 10px;
 }
+.speech-bubble {
+    background-color: #88c070;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+  .voice-bar {
+    height: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .speech-bubble:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #88c070 transparent transparent;
+    top: 0;
+    left: -10px;
+  }
+  
+  .speech-bubble:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+    top: -10px;
+    left: -9px;
+  }
