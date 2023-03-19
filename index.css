@@ -102,9 +102,10 @@ section,
   margin: 0 auto; /* 文章水平居中 */
   font-family: IvarText-Regular; /* 字体样式 */
   font-size: 16px;
-  line-height: 5; /* 行高 */
+  line-height: 4; /* 行高 */
   color: #333; /* 文字颜色 */
 }
+
 .Jonathan Scharrer{
     position: absolute;
     left: -50px; /* 将 div 元素移动到对话框的左侧 */
@@ -253,7 +254,6 @@ h2.subheadline{
 .speech-bubble {
     background-color: #88c070;
     border-radius: 10px;
-    color: #fff;
     padding: 20px;
     position: relative;
     max-width: 300px;
@@ -267,7 +267,6 @@ h2.subheadline{
   }
   
   .speech-bubble:before {
-    content: "";
     position: absolute;
     border-style: solid;
     border-width: 0 10px 10px 0;
@@ -276,6 +275,12 @@ h2.subheadline{
     left: -10px;
   }
   
+  .quots{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #fff;
+  }
+
   .speech-bubble:after {
     content: "";
     position: absolute;
