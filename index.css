@@ -19,7 +19,7 @@ body {
 h1.headline {
     color:#ededed;
     width: 100%;
-    margin-bottom: 20em;
+    /* margin-bottom: 0.5em; */
     text-align: center;
     font-family:"IvarHeadline-Bold" ,"Georgia",serif;
     font-size: 1em;
