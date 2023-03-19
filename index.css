@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h1, p {
+    display: block;
+  }
+
 body {
     overflow-x: hidden;
 }
