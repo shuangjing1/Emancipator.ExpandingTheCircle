@@ -19,7 +19,7 @@ body {
 h1.headline {
     color:#ededed;
     width: 100%;
-    margin-bottom: 0.5em;
+    margin-bottom: 20em;
     text-align: center;
     font-family:"IvarHeadline-Bold" ,"Georgia",serif;
     font-size: 1em;
@@ -27,7 +27,7 @@ h1.headline {
 
 p.author-info{
     width: 100%;
-    margin-top: 0.5em;
+    /* margin-top: 0.5em; */
     justify-content: center;
     align-items: center;
     font-size: 20px;
