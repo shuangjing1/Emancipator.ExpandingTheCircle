@@ -61,12 +61,12 @@ p.lead{
 .speech-bubble {
   background-color: #88c070;
   border-radius: 10px;
-  padding: 1em 1em;
+  padding: 0.3em 0.3em;
   position: relative;
   box-shadow: 7px 30px 40px #545353;
   transition: 0.5s;
   animation: speech .7s linear 1;
-  margin: 20px;
+  margin: 415px;
 }
 
 .speech-bubble:after{
@@ -75,8 +75,8 @@ p.lead{
   border: 0.5em solid transparent;
   border-top-color: #88c070;
   border-right-color: #88c070;
-  right:99.99%;
-  top: 50%;
+  right:100%;
+  top: 20%;
   transform: skewY(20deg);
   transform-origin: 100% 100%;
 }
@@ -87,6 +87,17 @@ p.lead{
   50%{top:20px;}
   75%{top: -20px;box-shadow: 7px -10px 50px #545353;}
   100%{top:0;}
+}
+
+.Jonathan {
+  width: 15vh;
+  height: 20vh;
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 150px;
+  margin-top: 10px;
 }
 
 .img {
@@ -128,17 +139,6 @@ p.lead{
     background-size: cover;
 }
 
-.Jonathan {
-  width: 15vh;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  border-radius: 50%;
-  padding: 0%;
-}
-
 .text-box {
     width: 100%;
     height: 50%;
@@ -156,7 +156,7 @@ p.lead{
 }
 p.graph {
     max-width: 800px; /* 设置文章最大宽度 */
-  margin: 0 auto; /* 文章水平居中 */
+  margin-top: 40px;
   font-family: IvarText-Regular; /* 字体样式 */
   font-size: 16px;
   line-height: 4; /* 行高 */
