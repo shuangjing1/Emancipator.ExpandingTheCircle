@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     overflow-x: hidden;
@@ -147,6 +147,16 @@ p.graph {
     background-image: url('/Users/shuangjing/Desktop/projects/expanding the circle/Emancipator.ExpandingTheCircle/img'); /* 将背景图像设置为所需的椭圆形图像 */
     background-size: cover; /* 使背景图像充满整个 div 元素 */
 }
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  #audio {
+    display: none;
+  }
 
 .text-box .cnt {
     display: inline-block;
