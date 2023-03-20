@@ -6,9 +6,6 @@
 
 body {
     overflow-x: hidden;
-    text-shadow: none !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -147,13 +144,13 @@ p.graph {
   color: #333; /* 文字颜色 */
 }
 
-.Jonathan Scharrer{
+.Jonathan {
     position: absolute;
     left: -50px; /* 将 div 元素移动到对话框的左侧 */
     width: 50px;
     height: 50px;
     border-radius: 50%; /* 将 div 元素的边框半径设置为50%，以创建椭圆形 */
-    background-image: url('/Users/shuangjing/Desktop/projects/expanding the circle/Emancipator.ExpandingTheCircle/img'); /* 将背景图像设置为所需的椭圆形图像 */
+    background-image: url(./img/Jonathan.jpg); /* 将背景图像设置为所需的椭圆形图像 */
     background-size: cover; /* 使背景图像充满整个 div 元素 */
 }
 
