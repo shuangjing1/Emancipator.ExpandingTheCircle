@@ -302,6 +302,14 @@ h2.subheadline{
     transform: skewY(20deg);
     transform-origin: 100% 100%;
   }
+  @keyframes speech{
+
+    0%{top: -20px;}
+    25%{top:5px; box-shadow: 7px 40px 40px #545353;}
+    50%{top:20px;}
+    75%{top: -20px;box-shadow: 7px -10px 50px #545353;}
+    100%{top:0;}
+  }
   
   .voice-bar {
     height: 10px;
