@@ -278,6 +278,7 @@ h2.subheadline{
   }
   
   p.quots{
+    margin: 0.3em;
     font-family: Staff-Bold;
     font-size: 13px;
     color: #fff;
