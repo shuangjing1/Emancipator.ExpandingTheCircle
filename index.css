@@ -9,34 +9,95 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: auto;
 }
 
-section,
-#footer {
-    height: 100vh;
-    position: relative;
-    color: rgba(255, 255, 255, .8);
-    font-size: 10vh;
-    /* 设置字体 */
-    font-family: 'modern_no._20regular',
-        serif;
-    /* 文字阴影 */
+.author-container {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+h1.headline {
+    color:#ededed;
+    width: 80%;
+    margin-left: 1em;
+    margin-top: 0.3em;
+    text-align:left;
+    font-family:"IvarHeadline-Bold" ,"Georgia",serif;
+    font-size: 0.8em;
     text-shadow: 4px 4px rgb(46, 43, 43);
-    /* 弹性布局 */
-    display: flex;
-    /* 水平居中 */
-    justify-content: center;
-    /* 垂直居中 */
-    align-items: center;
 }
 
-#footer {
-    background-color: #c0b5aa;
-    height: 50vh;
-    color: #fff;
-    font-size: 20vh;
+p.author-info{
+    color: #d7d7d7;
+    width: 50%;
+    margin-right: 1em;
+    margin-right: 0.3em;
+    text-align: center;
+    font-family: "IvarHeadline-Bold" ,"Georgia",serif;
+    font-size: 20px;
+}
+/* .author-info span {
+    margin-right: 10px;
+} */
+
+p.lead{
+    width: 100%;
+    margin-top: 0.5em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 30px;
+    color: #d7d7d7;
+    background: #000;
+}
+
+.speech-bubble {
+  background-color: #88c070;
+  border-radius: 10px;
+  padding: 0.3em 0.3em;
+  position: relative;
+  box-shadow: 7px 30px 40px #545353;
+  transition: 0.5s;
+  animation: speech .7s linear 1;
+  margin: 415px;
+}
+
+.speech-bubble:after{
+  content: '';
+  position: absolute;
+  border: 0.5em solid transparent;
+  border-top-color: #88c070;
+  border-right-color: #88c070;
+  right:100%;
+  top: 20%;
+  transform: skewY(20deg);
+  transform-origin: 100% 100%;
+}
+@keyframes speech{
+
+  0%{top: -20px;}
+  25%{top:5px; box-shadow: 7px 40px 40px #545353;}
+  50%{top:20px;}
+  75%{top: -20px;box-shadow: 7px -10px 50px #545353;}
+  100%{top:0;}
+}
+
+.Jonathan {
+  width: 15vh;
+  height: 20vh;
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 150px;
+  margin-top: 10px;
 }
 
 .img {
@@ -55,26 +116,26 @@ section,
 
 
 #img-one {
-    background-image: url(./img/img2.jpg);
+    background-image: url(./img/expandingthecircle.jpg);
     background-size: cover;
 }
 
 #img-two {
-    background-image: url(./img/img4.jpg);
+    background-image: url(./img/black.jpg);
 }
 
-.content-one {
-    background: url(./img/img1.jpg) no-repeat fixed center;
+.sec-1-subheadline-box {
+    background: url(./img/whichlawisbroken.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-two {
-    background: url(./img/img2.jpg) no-repeat fixed center;
+    background: url(./img/whodidit.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-three {
-    background: url(./img/img3.jpg) no-repeat fixed center;
+    background: url(./img/whatdotheydeserve1.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
@@ -93,6 +154,24 @@ section,
     transform: skew(0, -8deg);
 
 }
+p.graph {
+    max-width: 800px; /* 设置文章最大宽度 */
+  margin-top: 40px;
+  font-family: IvarText-Regular; /* 字体样式 */
+  font-size: 16px;
+  line-height: 4; /* 行高 */
+  color: #333; /* 文字颜色 */
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  #audio {
+    display: none;
+  }
 
 .text-box .cnt {
     display: inline-block;
@@ -109,7 +188,6 @@ section,
     font-size: 36px;
     font-family: 'modern_no._20regular',
         serif;
-    text-shadow: 1px 0px 0px #323232;
     letter-spacing: 0.3em;
     /* 大写字母 */
     text-transform: uppercase;
@@ -124,19 +202,107 @@ section,
     color: #fff;
 }
 
-.cnt a.btn {
-    font-size: 90%;
+
+@font-face {
+    font-family: "IvarHeadline-Regular";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Regular.woff2);
+   }  
+   @font-face {
+    font-family: "IvarHeadline-Italic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
+   } 
+   @font-face {
+    font-family: "IvarHeadline-Bold";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Bold.woff2);
+   }  
+   @font-face {
+    font-family: "IvarHeadline-BoldItalic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
+   } 
+   @font-face {
+    font-family: "IvarText-Regular";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
+   } 
+   @font-face {
+    font-family: "IvarText-Italic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
+   }
+   @font-face {
+    font-family: "IvarText-Bold";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Bold.woff2);
+   }
+   @font-face {
+    font-family: "Staff-Regular";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Regular.woff2);
+   }  
+   @font-face {
+    font-family: "Staff-Italic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Italic.woff2);
+   } 
+   @font-face {
+    font-family: "Staff-Bold";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Bold.woff2);
+   }  
+   @font-face {
+    font-family: "Staff-BoldItalic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-BoldItalic.woff2);
+   } 
+   @font-face {
+    font-family: "Carrie-Regular";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/VTCCarrie-Regular.woff2);
+   } 
+   /* ------------------ EMANCIPATOR COLORS ---------------------------------------- */
+/* FOREST #31463F */
+/* ROSE #CD395B */
+/* FOREST #31463F */
+/* PINK #F6B0A0 */
+/* PUTTY #F6F2E1 */
+/* SKY #BADEFC */
+/* BLACK #1C1C1C */
+/* HIGHLIGHTER #EBF952 
+gold#FBC24C
+*/
+
+/*    MY TYPE STYLES    */
+
+h2.subheadline{
+    color:#ededed;
+    font-family:"IvarHeadline-Regular","Georgia",serif;
+    font-size: 0.5em;
+}
+  
+  .voice-bar {
+    height: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  p.quots{
+    font-family: Staff-Bold;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  section,
+#footer {
+    height: 100vh;
+    position: relative;
+    color: rgba(255, 255, 255, .8);
+    font-size: 10vh;
+    /* 设置字体 */
     font-family: 'modern_no._20regular',
         serif;
-    letter-spacing: 0.3em;
-    text-shadow: 1px 0px 0px black;
-    line-height: 2.8;
-    display: inline-block;
-    background-color: #eaeaea;
-    color: #000;
-    border: 3px solid #000;
-    white-space: nowrap;
-    text-decoration: none;
-    padding: 0 20px;
+    /* 弹性布局 */
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
 
+#footer {
+    background-color: #c0b5aa;
+    height: 50vh;
+    color: #fff;
+    font-size: 20vh;
 }
