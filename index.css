@@ -16,17 +16,30 @@ body {
     height: auto;
 }
 
-.author-container {
+.back-vid{
+  position:relative;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* .author-container {
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+  } */
+
+  div.headline {
+    position: relative;
+    top: 100px;
+     margin-left: 1em;
+    margin-top: 0.3em;
   }
 
-h1.headline {
+.headline h1 {
     color:#ededed;
     width: 80%;
-    margin-left: 1em;
-    margin-top: 0.3em;
+   
     text-align:left;
     font-family:"IvarHeadline-Bold" ,"Georgia",serif;
     font-size: 0.8em;
@@ -59,6 +72,10 @@ p.lead{
 }
 
 .speech-bubble {
+  float: left;
+  width: 50%;
+  position:relative;
+  top:100px;
   background-color: #88c070;
   border-radius: 10px;
   padding: 0.3em 0.3em;
@@ -66,7 +83,7 @@ p.lead{
   box-shadow: 7px 30px 40px #545353;
   transition: 0.5s;
   animation: speech .7s linear 1;
-  margin: 415px;
+  /*margin: 415px;*/
 }
 
 .speech-bubble:after{
@@ -89,14 +106,15 @@ p.lead{
   100%{top:0;}
 }
 
-.Jonathan {
-  width: 15vh;
-  height: 20vh;
-  display: flex;
-  position: absolute;
+.Jonathan  {
+  float:left;
+  width: 25%;
+  /*height: 20vh;*/
+  /*display: flex;
+  position: absolute;*/
   border-radius: 50%;
   padding: 0%;
-  margin: 150px;
+  margin: 0 100px 0 0;
   margin-top: 10px;
 }
 
